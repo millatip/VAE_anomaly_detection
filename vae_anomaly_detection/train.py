@@ -13,7 +13,7 @@ from vae_anomaly_detection.VAE import VAEAnomalyTabular
 from vae_anomaly_detection.dataset import rand_dataset
 
 EXPERIMENT_FOLDER = Path(__file__).parent.parent
-
+CUDA_VISIBLE_DEVICES=""
 
 def get_folder_run() -> Path:
     run_path: Path = EXPERIMENT_FOLDER / 'run'
